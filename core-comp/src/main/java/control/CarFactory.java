@@ -16,7 +16,6 @@ public class CarFactory {
 	public Car createCar(Specification spec) {
 		Car car = new Car();
 		car.setIdentifier(UUID.randomUUID().toString());
-		
 		car.setColor(spec.getColor() == null ? defaultCarColor : spec.getColor());
 		car.setEngineType(spec.getEngineType());
 		return car;
